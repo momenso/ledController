@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>ledController</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+	<script>
+		$(function() {
+		    $( "input" ).button().click(function( event ) {
+		    	console.dir(this.id);
+		    	console.log('button click:'+this.id);
+		    	$.ajax({ url: "/led/"+this.id });
+		    });
+	    });
+	</script>
+</head>
+<body>
+	<h1>LED Controller</h1>
+	<div>
+		<input type="button" id="0" value="LED 1">
+		<input type="button" id="1" value="LED 2">
+	</div>
+</body>
+</html>

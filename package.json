@@ -1,0 +1,21 @@
+{
+  "name": "ledController",
+  "version": "0.0.1",
+  "description": "Led Controller SPA for RPi",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "RPi",
+    "node.js",
+    "SPA",
+    "LED"
+  ],
+  "dependencies": {
+    "express": ">= 4.11.1",
+    "onoff": ">= 1.0.0"
+  },
+  "author": "David Momenso <momenso@gmail.com>",
+  "license": "MIT"
+}
